@@ -33,5 +33,3 @@ brew bundle ~/Brewfile
 ```bash
 brew bundle ~/Caskfile
 ```
-
-* A lot of the code was taken from [Mathias Bynens](http://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
