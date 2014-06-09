@@ -11,3 +11,5 @@ cask install sublime-text
 cask install the-unarchiver
 cask install flux
 cask install caffeine
+cask install hipchat
+cask install spotify
