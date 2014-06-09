@@ -1,0 +1,13 @@
+# Install native apps
+# Usage: `brew bundle Caskfile`
+
+install caskroom/cask/brew-cask
+tap caskroom/versions
+
+cask install dropbox
+cask install google-chrome 
+cask install iterm2
+cask install sublime-text
+cask install the-unarchiver
+cask install flux
+cask install caffeine
