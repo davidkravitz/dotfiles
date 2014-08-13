@@ -6,10 +6,11 @@ alias .....="cd ../../../.."
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias dv="cd ~/Developer"
+alias sc="cd ~/Developer/snapchat"
 alias g="git"
 
 # Detect which `ls` flavor is in use

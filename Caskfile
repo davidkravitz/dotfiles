@@ -13,3 +13,7 @@ cask install flux
 cask install caffeine
 cask install hipchat
 cask install spotify
+cask install todoist
+cask install atext
+cask install wireshark
+cask install onepassword
