@@ -1,5 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
+export APPENGINE_HOME="$HOME/google-cloud-sdk/platform/appengine-java-sdk";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
