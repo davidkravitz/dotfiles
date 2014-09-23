@@ -1,13 +1,19 @@
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
 
+# Theme
+set fish_theme robbyrussell
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Example format: set fish_plugins autojump bundler
-set fish_plugins git rails vi-mode
+set fish_plugins git vi-mode
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+
+# Load custom functions
+. $HOME/.config/fish/functions.fish
 
 set -U EDITOR vim
 set PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin
@@ -34,8 +40,6 @@ set GREP_OPTIONS --color=auto
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 set HOMEBREW_CASK_OPTS --appdir=/Applications
-
-
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
