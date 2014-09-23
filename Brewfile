@@ -7,6 +7,7 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
+install fish
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 install coreutils
@@ -27,6 +28,7 @@ install node # This installs `npm` too using the recommended installation method
 install rename
 install tree
 install app-engine-java-sdk
+install autojump
 
 # Remove outdated versions from the cellar
 cleanup

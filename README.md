@@ -4,19 +4,10 @@
 
 ### Bash scripts
 
-To install for the first time:
+Copy your local `dotfiles` repository to root:
+`cp -R /path/to/dotfiles/. ~/`
 
-```bash
-git clone https://github.com/davidkravitz/dotfiles.git && cd dotfiles && source bootstrap.sh
-```
-
-To update, `cd` into your local `dotfiles` repository and then:
-
-```bash
-source bootstrap.sh
-```
-
-### OS X defaults
+### OS X defaults (currently broken)
 
 ```bash
 ./.osx
@@ -33,3 +24,13 @@ brew bundle ~/Brewfile
 ```bash
 brew bundle ~/Caskfile
 ```
+
+### Install fish
+
+Fish is installed in the Brewfile
+
+Add Fish to `/etc/shells`, which will require an adminstrator password:
+`echo "/usr/local/bin/fish" | sudo tee -a /etc/shells`
+
+Make Fish your default shell:
+`chsh -s /usr/local/bin/fish`
