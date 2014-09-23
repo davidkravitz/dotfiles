@@ -17,3 +17,4 @@ cask install todoist
 cask install atext
 cask install wireshark
 cask install onepassword
+install intellij-idea-ce

@@ -26,7 +26,6 @@ install nmap
 install node # This installs `npm` too using the recommended installation method
 install rename
 install tree
-
 install app-engine-java-sdk
 
 # Remove outdated versions from the cellar
