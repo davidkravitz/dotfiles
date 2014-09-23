@@ -7,17 +7,16 @@ set fish_theme robbyrussell
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Example format: set fish_plugins autojump bundler
-set fish_plugins git vi-mode
+set fish_plugins git autojump
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
 # Load custom functions
-. $HOME/.config/fish/functions.fish
+#. $HOME/.config/fish/functions.fish
 
 set -U EDITOR vim
-set PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin
-$HOME/google-cloud-sdk/bin
+set PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin
 
 set APPENGINE_HOME $HOME/google-cloud-sdk/platform/appengine-java-sdk
 
@@ -28,9 +27,6 @@ set JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 # Prefer US English and use UTF-8
 set LANG en_US.UTF-8
 set LC_ALL en_US.UTF-8
-
-# Highlight section titles in manual pages
-set LESS_TERMCAP_md ${yellow}
 
 # Don’t clear the screen after quitting a manual page
 set MANPAGER less -X
@@ -71,10 +67,7 @@ function fish_prompt
 
   # Display the current directory name
   #echo -n -s $cwd $normal
-  echo -n -s (users) $normal
-  echo -n -s '@'
-  echo -n -s (hostname -s) $normal
-
+  echo -n (PWD)
 
   # Show git branch and dirty state
   if [ (_git_branch_name) ]
@@ -90,24 +83,4 @@ function fish_prompt
 
   # Terminate with a nice prompt char
   echo -n -s ' ] ' $normal
-
-end
-
-function fish_right_prompt
-  set -l last_status $status
-  set -l cyan (set_color -o cyan)
-  set -l red (set_color -o red)
-  set -l normal (set_color normal)
-
-  echo -n -s $cyan (prompt_pwd)
-
-  if test $last_status -ne 0
-    set_color red
-    printf ' %d' $last_status
-    set_color normal
-  end
-end
-
-function git-clean
-  git branch | sed 's/^..//' | xargs -n 1 git branch -d
 end

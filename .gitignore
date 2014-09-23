@@ -1,14 +1,16 @@
-# Compiled Python files
-*.pyc
+# Ignore everything
+*
 
-# Folder view configuration files
-.DS_Store
-Desktop.ini
+# But not these files...
+!.config/fish/*
+!.aliases
+!.gitconfig
+!.gitignore
+!.hushlogin
+!.osx
+!.vimrc
+!Brewfile
+!Caskfile
+!README.md
 
-# Thumbnail cache files
-._*
-Thumbs.db
 
-# Files that might appear on external disks
-.Spotlight-V100
-.Trashes
