@@ -84,3 +84,7 @@ function fish_prompt
   # Terminate with a nice prompt char
   echo -n -s ' ] ' $normal
 end
+
+function git-clean
+  git branch | sed 's/^..//' | xargs -n 1 git branch -d
+end
