@@ -5,7 +5,7 @@ install caskroom/cask/brew-cask
 tap caskroom/versions
 
 cask install dropbox
-cask install google-chrome 
+cask install google-chrome
 cask install iterm2
 cask install sublime-text
 cask install the-unarchiver
@@ -17,4 +17,5 @@ cask install todoist
 cask install atext
 cask install wireshark
 cask install onepassword
-install intellij-idea-ce
+cask install intellij-idea-ce
+cask install seil
