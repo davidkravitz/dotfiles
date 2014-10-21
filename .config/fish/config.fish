@@ -16,7 +16,7 @@ set fish_plugins git autojump
 #. $HOME/.config/fish/functions.fish
 
 set -U EDITOR vim
-set PATH $PATH $HOME/bin $HOME/Developer/libs/arcanist/bin $HOME/google-cloud-sdk/bin
+set PATH $PATH $HOME/bin $HOME/Developer/libs/arcanist/bin $HOME/google-cloud-sdk/bin $HOME/Developer/snapchat/git-extras/bin
 set APPENGINE_HOME $HOME/google-cloud-sdk/platform/appengine-java-sdk
 set JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 
