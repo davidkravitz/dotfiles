@@ -19,9 +19,8 @@ set smartindent	" Enable smart-indent
 set smarttab	" Enable smart-tabs
 set softtabstop=4	" Number of spaces per Tab
  
-" Advanced
+"" Advanced
 set ruler	" Show row and column ruler information
- 
 set undolevels=1000	" Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
 set clipboard=unnamed           " Normal OS clipboard interaction
