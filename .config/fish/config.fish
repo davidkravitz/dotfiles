@@ -15,10 +15,10 @@ set fish_plugins git autojump
 # Load custom functions
 #. $HOME/.config/fish/functions.fish
 
-set -U EDITOR vim
-set PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin
+set -xU EDITOR vim
+set -x PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin
 
-set APPENGINE_HOME $HOME/google-cloud-sdk/platform/appengine-java-sdk
+set -xU APPENGINE_HOME $HOME/Developer/libs/appengine-java-sdk-1.9.14 
 
 
 # Env variable
