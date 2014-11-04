@@ -18,6 +18,7 @@ set fish_plugins git autojump
 set -xU EDITOR vim
 set -x PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin
 set -xU APPENGINE_HOME $HOME/Developer/libs/appengine-java-sdk-1.9.14 
+set -xU ANDROID_HOME $HOME/Developer/libs/android-sdk-macosx 
 
 # Prefer US English and use UTF-8
 set LANG en_US.UTF-8
