@@ -16,7 +16,7 @@ set fish_plugins git autojump
 #. $HOME/.config/fish/functions.fish
 
 set -xU EDITOR vim
-set -x PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin
+set -x PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin $HOME/Developer/libs/android-sdk-macosx/platform-tools
 set -xU APPENGINE_HOME $HOME/Developer/libs/appengine-java-sdk-1.9.14 
 set -xU ANDROID_HOME $HOME/Developer/libs/android-sdk-macosx 
 
