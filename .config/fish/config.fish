@@ -16,7 +16,7 @@ set fish_plugins git autojump pbcopy osx theme python sublime
 #. $HOME/.config/fish/functions.fish
 
 set -xU EDITOR vim
-set -x PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin $HOME/Developer/libs/android-sdk-macosx/platform-tools
+set -x PATH $PATH $HOME/bin $HOME/Developer/phabricator/arcanist/bin $HOME/google-cloud-sdk/bin $HOME/Developer/libs/android-sdk-macosx/platform-tools $HOME/Developer/bazel/output/
 set -xU APPENGINE_HOME $HOME/Developer/libs/appengine-java-sdk-1.9.14 
 #set -xU APPENGINE_HOME $HOME/Developer/libs/appengine-java-sdk-1.9.17
 set -xU ANDROID_HOME $HOME/Developer/libs/android-sdk-macosx 
@@ -33,6 +33,12 @@ set GREP_OPTIONS --color=auto
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 set HOMEBREW_CASK_OPTS --appdir=/Applications
+
+function jhome
+    set -x JAVA_HOME (/usr/libexec/java_home $argv)
+    echo "JAVA_HOME:" $JAVA_HOME
+    java -version
+end
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
