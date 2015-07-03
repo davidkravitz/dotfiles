@@ -35,7 +35,7 @@ set GREP_OPTIONS --color=auto
 set HOMEBREW_CASK_OPTS --appdir=/Applications
 
 function jhome
-    set -x JAVA_HOME (/usr/libexec/java_home $argv)
+    set -xU JAVA_HOME (/usr/libexec/java_home $argv)
     echo "JAVA_HOME:" $JAVA_HOME
     java -version
 end
